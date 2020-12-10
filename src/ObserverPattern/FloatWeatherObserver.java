@@ -1,6 +1,6 @@
 package ObserverPattern;
 
-public class WeatherObserver implements Observer {
+public class FloatWeatherObserver implements Observer {
 
     private int pressure;
 
@@ -10,7 +10,7 @@ public class WeatherObserver implements Observer {
 
     private Subject subject;
 
-    public WeatherObserver(Subject subject) {
+    public FloatWeatherObserver(Subject subject) {
         this.subject = subject;
         this.subject.registerObserver(this);
     }
@@ -25,6 +25,9 @@ public class WeatherObserver implements Observer {
     }
 
     private void demonstrateData() {
-        System.out.println('{' + " pressure = " + pressure + ", temperature = " + temperature + ", humidity = " + humidity + " }");
+        System.out.println("Float Weather Observer \n" +
+            '{' + " pressure = " + (float) pressure +
+            ", temperature = " + (float) temperature +
+            ", humidity = " + (float) humidity + " }");
     }
 }
