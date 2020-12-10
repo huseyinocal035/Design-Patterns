@@ -33,3 +33,4 @@ In core java, there are mainly three types of design patterns, which are further
     - Strategy Pattern
     - Template Pattern
     - Visitor Pattern
+    - Null Object Pattern
